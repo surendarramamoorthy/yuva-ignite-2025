@@ -18,9 +18,9 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-hero-gradient text-primary-foreground shadow-electric hover:shadow-glow hover:scale-105 transition-all duration-300 font-semibold",
-        register: "bg-accent text-accent-foreground shadow-card hover:bg-accent/90 hover:shadow-electric hover:scale-105 transition-all duration-300 font-semibold animate-pulse-glow",
-        tech: "bg-tech-gradient text-primary-foreground border-0 hover:shadow-glow hover:scale-105 transition-all duration-300",
+        cyber: "bg-cyber-gradient text-primary-foreground shadow-neon-glow hover:shadow-purple-glow hover:scale-105 transition-all duration-300 font-cyber font-semibold border border-neon-blue/50",
+        battle: "bg-accent text-accent-foreground shadow-red-glow hover:shadow-purple-glow hover:scale-110 transition-all duration-300 font-cyber font-bold animate-pulse",
+        neon: "bg-card border-2 border-neon-blue text-neon-blue hover:bg-neon-blue hover:text-background shadow-neon-glow hover:shadow-purple-glow transition-all duration-300 font-cyber",
       },
       size: {
         default: "h-10 px-4 py-2",

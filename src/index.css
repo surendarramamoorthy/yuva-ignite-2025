@@ -8,71 +8,68 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 215 25% 27%;
+    --background: 210 22% 8%;
+    --foreground: 210 20% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 215 25% 27%;
+    --card: 215 25% 12%;
+    --card-foreground: 210 20% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 27%;
+    --popover: 215 25% 12%;
+    --popover-foreground: 210 20% 95%;
 
-    --primary: 221 100% 50%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 221 100% 65%;
+    --primary: 217 100% 60%;
+    --primary-foreground: 210 22% 8%;
+    --primary-glow: 217 100% 70%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 215 25% 27%;
+    --secondary: 215 25% 16%;
+    --secondary-foreground: 210 20% 95%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 215 25% 16%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 15 100% 60%;
-    --accent-foreground: 0 0% 100%;
-    --accent-glow: 15 100% 70%;
+    --accent: 0 100% 60%;
+    --accent-foreground: 210 22% 8%;
+    --accent-glow: 0 100% 70%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 210 20% 95%;
 
-    --border: 215 14% 89%;
-    --input: 215 14% 89%;
-    --ring: 221 100% 50%;
+    --border: 215 25% 20%;
+    --input: 215 25% 16%;
+    --ring: 217 100% 60%;
 
     --radius: 0.75rem;
 
-    /* Tech fest specific colors */
-    --electric-blue: 221 100% 50%;
-    --vibrant-orange: 15 100% 60%;
-    --tech-gradient: linear-gradient(135deg, hsl(var(--electric-blue)), hsl(var(--accent-glow)));
-    --hero-gradient: linear-gradient(135deg, hsl(var(--electric-blue)) 0%, hsl(var(--vibrant-orange)) 100%);
-    --card-gradient: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(215 20% 98%) 100%);
+    /* Neon colors for futuristic theme */
+    --neon-blue: 217 100% 60%;
+    --neon-red: 0 100% 60%;
+    --neon-purple: 280 100% 60%;
+    --neon-cyan: 180 100% 50%;
+    --electric-green: 120 100% 50%;
+
+    /* Gradients for futuristic effects */
+    --cyber-gradient: linear-gradient(135deg, hsl(var(--neon-blue)) 0%, hsl(var(--neon-purple)) 50%, hsl(var(--neon-red)) 100%);
+    --circuit-gradient: linear-gradient(45deg, hsl(var(--neon-blue) / 0.1) 0%, hsl(var(--neon-purple) / 0.1) 100%);
+    --glow-gradient: radial-gradient(circle, hsl(var(--neon-blue) / 0.3) 0%, transparent 70%);
     
-    /* Shadows and effects */
-    --shadow-electric: 0 20px 40px -10px hsl(var(--electric-blue) / 0.2);
-    --shadow-glow: 0 0 30px hsl(var(--primary-glow) / 0.3);
-    --shadow-card: 0 4px 20px hsl(215 25% 27% / 0.08);
+    /* Shadows and glows */
+    --neon-glow: 0 0 20px hsl(var(--neon-blue) / 0.5), 0 0 40px hsl(var(--neon-blue) / 0.3), 0 0 80px hsl(var(--neon-blue) / 0.1);
+    --red-glow: 0 0 20px hsl(var(--neon-red) / 0.5), 0 0 40px hsl(var(--neon-red) / 0.3);
+    --purple-glow: 0 0 20px hsl(var(--neon-purple) / 0.5), 0 0 40px hsl(var(--neon-purple) / 0.3);
+    --card-glow: 0 4px 20px hsl(var(--neon-blue) / 0.1), 0 0 0 1px hsl(var(--border));
     
     /* Animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-cyber: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.4s ease-in-out;
 
-    --radius: 0.75rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 215 25% 10%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 217 100% 60%;
+    --sidebar-primary-foreground: 210 22% 8%;
+    --sidebar-accent: 215 25% 16%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 215 25% 20%;
+    --sidebar-ring: 217 100% 60%;
   }
 
   .dark {

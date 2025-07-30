@@ -63,24 +63,33 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				neon: {
+					blue: 'hsl(var(--neon-blue))',
+					red: 'hsl(var(--neon-red))',
+					purple: 'hsl(var(--neon-purple))',
+					cyan: 'hsl(var(--neon-cyan))',
+					green: 'hsl(var(--electric-green))'
 				}
 			},
 			backgroundImage: {
-				'hero-gradient': 'var(--hero-gradient)',
-				'tech-gradient': 'var(--tech-gradient)',
-				'card-gradient': 'var(--card-gradient)'
+				'cyber-gradient': 'var(--cyber-gradient)',
+				'circuit-gradient': 'var(--circuit-gradient)',
+				'glow-gradient': 'var(--glow-gradient)'
 			},
 			boxShadow: {
-				'electric': 'var(--shadow-electric)',
-				'glow': 'var(--shadow-glow)',
-				'card': 'var(--shadow-card)'
+				'neon-glow': 'var(--neon-glow)',
+				'red-glow': 'var(--red-glow)',
+				'purple-glow': 'var(--purple-glow)',
+				'card-glow': 'var(--card-glow)'
 			},
 			transitionTimingFunction: {
-				'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
-				'bounce': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)'
+				'cyber': 'cubic-bezier(0.4, 0, 0.2, 1)',
+				'glow': 'ease-in-out'
 			},
 			fontFamily: {
-				'display': ['Inter', 'system-ui', 'sans-serif'],
+				'cyber': ['Orbitron', 'monospace'],
+				'display': ['Orbitron', 'monospace'],
 				'body': ['Inter', 'system-ui', 'sans-serif']
 			},
 			borderRadius: {

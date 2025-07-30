@@ -1,7 +1,7 @@
-import YUVA from './YUVA';
+import YUVATechFest from './YUVATechFest';
 
 const Index = () => {
-  return <YUVA />;
+  return <YUVATechFest />;
 };
 
 export default Index;
